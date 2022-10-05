@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useRef, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import "./Create.css";
 import { toast } from "react-toastify";
@@ -13,6 +13,7 @@ const Create = () => {
     location: "",
   };
   const [formData, setFormData] = useState({ ...initialData });
+  const handleFile = useRef(null);
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -37,7 +38,10 @@ const Create = () => {
       <h3>Create your event</h3>
       <form onSubmit={handleSubmit}>
         <div className="picture" id="upload">
-          <input type="file" name="upload" id="upload" />
+          <label htmlFor="upload" onClick={() => handleFile.current.click()}>
+            📷 Choose a Photo
+          </label>
+          <input type="file" id="upload" ref={handleFile} hidden />
         </div>
         <div className="form-input">
           <label htmlFor="name"> 🎉 My event is called</label>
