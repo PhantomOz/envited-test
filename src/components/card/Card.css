@@ -1,0 +1,30 @@
+.card {
+  padding: 0 20px;
+  margin-bottom: 16px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.card_icon {
+  height: 48px;
+}
+.card_icon img {
+  height: inherit;
+}
+.card_info_title {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 18px;
+  color: #240d57;
+  margin: 0;
+}
+.card_info_sub {
+  font-family: "Helvetica";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  color: #4f4f4f;
+  margin: 0;
+}

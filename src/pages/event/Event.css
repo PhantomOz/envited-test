@@ -1,0 +1,26 @@
+.banner_img {
+  height: 375px;
+  background-image: url("../../assets/imgs/event.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-clip: border-box;
+  background-size: cover;
+}
+.banner_heading {
+  font-family: "Helvetica";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 32px;
+  color: #240d57;
+  margin: 11px 20px 4px;
+}
+.banner_author {
+  font-family: "Helvetica";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  color: #828282;
+  margin: 0 20px 32px;
+}
